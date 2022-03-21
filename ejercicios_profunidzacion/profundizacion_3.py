@@ -35,6 +35,12 @@ https://www.geeksforgeeks.org/isupper-islower-lower-upper-python-applications/
 
 Cualquier duda con estos métodos pueden consultarla por el campus
 '''
+import string
 
 print('Ahora si! buena suerte')
 # Empezar aquí la resolución del ejercicio
+print ("ingrese su nombre completo:")
+nombre_completo = str(input())
+print(nombre_completo.lower())
+print(nombre_completo.upper())
+print(nombre_completo.capitalize())

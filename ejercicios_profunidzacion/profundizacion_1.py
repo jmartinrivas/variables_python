@@ -23,6 +23,7 @@ C) Multiplicación
 D) División
 E) Exponente/Potencia
 
+
 - Para todos los casos se debe imprimir en pantalla el resultado aclarando
   la operación realizada en cada caso y con que números
   se ha realizado la operación
@@ -31,3 +32,27 @@ E) Exponente/Potencia
 
 print('¡Nuestra primera calculadora!')
 # Empezar aquí la resolución del ejercicio
+print('Ingrese el primer número que desea operar:')
+numero_1 = int(input())
+print('Ingrese el segundo número que desea operar:')
+numero_2 = int(input())
+print('Ingrese la operacion que desea realizar indicando:\nA) Suma\nB) Resta\nC) Multiplicación\nD) División\nE) Exponente/Potencia:')
+operación_1 = str(input())
+while operación_1 != "a" and operación_1 != "A" and operación_1 != "b" and operación_1 != "B" and operación_1 != "c" and operación_1 != "C" and operación_1 != "d" and operación_1 != "D" and operación_1 != "e" and operación_1 != "E":
+    print('Error Ingrese la operacion que desea realizar indicando:\nA) Suma\nB) Resta\nC) Multiplicación\nD) División\nE) Exponente/Potencia:')
+    operación_1 = str(input())
+if operación_1 == "a" or operación_1 =="A": 
+    print("la suma entre",numero_1,"y",numero_2,"es:", numero_1+numero_2)
+if operación_1 == "b" or operación_1 =="B":
+    print("la resta entre",numero_1,"y",numero_2,"es:", numero_1-numero_2)
+if operación_1 == "c" or operación_1 =="C":
+    print("la multiplicación entre",numero_1,"y",numero_2,"es:", numero_1*numero_2)
+if operación_1 == "d" or operación_1 =="D":
+    print("la división entre",numero_1,"y",numero_2,"es:", numero_1/numero_2)
+if operación_1 == "e" or operación_1 =="E":
+    print("la potencia entre",numero_1,"y",numero_2,"es:", numero_1**numero_2)
+
+    
+              
+
+
